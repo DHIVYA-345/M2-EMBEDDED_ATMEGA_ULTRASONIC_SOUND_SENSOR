@@ -1,3 +1,9 @@
 # M2-EMBEDDED_PREPAID_ELECTRICITY_BILLING
+•	To develop to facilitate energy consumption measurement and to know consumers maximum demand and to overcome the problems or error in meter reading  and the advantage is that you are able to more easily track and control your electricity expenses. 
 
-                  The aim of the project is to minimize the queue at the energy meter billing counters and to restrict the usage of energy meter automatically, if the bill is not paid. The project also aims at proposing a system that will reduce the loss of power and revenue due to power thefts and other illegal activities. The work system adopts a totally new concept of "Prepaid Energy Meter". The GSM technology is used so that the consumer would receive messages about the consumption of power (in watts) and if it reaches the minimum amount, it would automatically alert the consumer to recharge. This technology holds good for all electricity distribution companies, private communities, IT parks and self-containing housing projects. The implementation of this project will help in better energy management, conservation of energy and also in doing away with the unnecessary hassles over incorrect billing. The automated billing system will keep track of the real time consumption and will leave little scope for disagreement on consumption and billing.
+•	The main objective of this project is to Prepaid paying of electricity bills and to minimize the losses, informing consumption via SMS.Through this project we can also reduce the reading expenses
+
+•	To design and to provide low cost and flexible automated prepaid energy meter .Electricity bill automatically sends to the customer through GSM module and gives an alert message to the customer.
+
+•	To improve cash flow management , greater awareness on consumers consumption habits and to integrate all the functions like billing and automatic message response to the energy department into it.
+                  
