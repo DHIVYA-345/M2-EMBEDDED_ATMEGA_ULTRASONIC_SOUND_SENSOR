@@ -1,6 +1,6 @@
 # Distance Measurement Using Arduino & HC-SR04 Ultrasonic Sensor:
 
-* In this project, we are going to interface Ultrasonic sensor HC-SR04 with Arduino and LCD Display.
+* In this project, we are going to interface Ultrasonic sensor HC-SR04 with ATMEGA328P and LCD Display.
 * The ultrasonic sensor is used to measure the distance.
 * It acts as a Sonar.
 * It sends an ultrasonic wave of a certain frequency that comes back after hitting the object and calculates the time traveled by it.
@@ -8,12 +8,27 @@
 
 ## COMPONENTS USED:
 
-1. Arduino Uno Board
+1. ATMEGA328P
 2. Ultrasonic Sesnor HC-SR04
 3. 16*2 LCD Display
 4. Breadboard
 5. Connecting Wires
 6. 5V Power Supply
+
+## FEATURES:
+
+Ultrasonic sensors emit short, high-frequency sound pulses at regular intervals. These propagate in the air at the velocity of sound. If they strike an object, then they are reflected back as echo signals to the sensor, which itself computes the distance to the target based on the time-span between emitting the signal and receiving the echo.
+
+We will have to convert this time into cm to calculate the distance traveled. We will use the following equation to calculate the distance.
+
+                                               S = v * t
+                                               
+ The ultrasonic wave is basically a sound wave that travels at a speed of 340 m/s (0.034 cm/s). The ultrasonic sensor is measuring the time it takes to hit the object and then come back but we need only time that it takes to hit the object. So, we will divide it by 2.
+                                           
+                                           S = (t * 0.034)/2                                              
+
+![image](https://user-images.githubusercontent.com/94309132/144060375-8026e283-b561-4b80-8d45-fa88e47b47f0.png)
+
 
 ## HIGH LEVEL REQUIREMENT:
 
@@ -79,6 +94,18 @@
 |16 |     LED Negative          |  Backlight LED pin negative terminal                                                        |
 
 
+### 4WIH ANALYSIS :
+
+* What - The ultrasonic sensor is used to measure the distance. It acts as a Sonar. It sends an ultrasonic wave of a certain frequency          that comes back after hitting the object and calculates the time traveled by it. 
+* Where - Ultrasonic sensors are used primarily as proximity sensors. They can be found in automobile self-parking technology and anti-           collision safety systems. Ultrasonic sensors are also used in robotic obstacle detection systems, as well as manufacturing             technology.
+* when - anytime.
+* why - An ultrasonic sensor is an electronic device that measures the distance.
+* How - after buliding perfect system , testing and executiON.
 
 
+### SWOT ANALYSIS :
 
+* stregnth - Measure distance easily.
+* Weakness - nil
+* Oppurtunity - can inbuilt with any application nedds distance measurement.
+* Threat - nil
