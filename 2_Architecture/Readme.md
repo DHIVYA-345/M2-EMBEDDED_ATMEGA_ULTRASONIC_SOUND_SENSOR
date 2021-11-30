@@ -14,3 +14,9 @@
 ## 16x2 LCD Module :
 
 ![image](https://user-images.githubusercontent.com/94309132/144063212-58a0ad56-f626-48b3-9f26-61cb8638d0a5.png)
+
+
+# BLOCK DIAGRAM :
+
+![uml (1)](https://user-images.githubusercontent.com/94309132/144071425-13a73aaa-368a-44e1-9a1c-10f7530802f9.png)
+
