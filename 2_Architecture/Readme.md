@@ -34,6 +34,7 @@ atmega328-1 : atmega328
 # SIMULATION DIAGRAM :
 
 
-![module 2 project](https://user-images.githubusercontent.com/94309132/144083471-4453bd28-5a32-4abc-91d8-09f995a2a191.png)
+![module 2 project](https://user-images.githubusercontent.com/94309132/144086770-f0c138eb-d531-4765-ae43-1779941e009b.png)
+
 
 
