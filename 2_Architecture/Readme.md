@@ -31,4 +31,9 @@ Hd44780-2 : Hd44780
 SR04-4 : SR04   
 atmega328-1 : atmega328   
 
+# SIMULATION DIAGRAM :
+
+
+![module 2 project](https://user-images.githubusercontent.com/94309132/144083471-4453bd28-5a32-4abc-91d8-09f995a2a191.png)
+
 
