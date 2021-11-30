@@ -20,3 +20,15 @@
 
 ![uml (1)](https://user-images.githubusercontent.com/94309132/144071425-13a73aaa-368a-44e1-9a1c-10f7530802f9.png)
 
+
+# BILL OF MATERIALS
+
+Circuit: module 2 project.simu
+
+Bill of Materials:
+
+Hd44780-2 : Hd44780   
+SR04-4 : SR04   
+atmega328-1 : atmega328   
+
+
