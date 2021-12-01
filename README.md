@@ -1,1 +1,1 @@
-
+[![CI](https://github.com/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/actions/workflows/main.yml/badge.svg)](https://github.com/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/actions/workflows/main.yml)
