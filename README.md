@@ -24,3 +24,5 @@
 
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2cd7012265924c86bf07b3bb14d755f4)](https://www.codacy.com/gh/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR&amp;utm_campaign=Badge_Grade)
+
+[![Build Windows](https://github.com/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/actions/workflows/build_windows.yml/badge.svg)](https://github.com/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/actions/workflows/build_windows.yml)
