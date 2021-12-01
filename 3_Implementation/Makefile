@@ -1,69 +1,54 @@
-########################################################################
-####################### Makefile Template ##############################
-########################################################################
+PROJ_NAME = Distance_Mesurement
 
-# Compiler settings - Can be customized.
-CC = gcc
-CXXFLAGS = -std=c11 -Wall
-LDFLAGS = 
+BUILD_DIR = Build
 
-# Makefile settings - Can be customized.
-APPNAME = distance measurement
-EXT = .c
-SRCDIR = /mnt/c/Users/Roja/Desktop/n/distance measurement
-OBJDIR = obj
+# All Source code files
+SRC =distance_measure.c\
+src/usat.c
+src/i2c.c
+src/i2c_lcd.c
+# All header file paths
+INC = -I inc
 
-############## Do not change anything from here downwards! #############
-SRC = $(wildcard $(SRCDIR)/*$(EXT))
-OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
-DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
-# UNIX-based OS variables & settings
-RM = rm
-DELOBJ = $(OBJ)
-# Windows OS variables & settings
-DEL = del
-EXE = .exe
-WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
+# Find out the OS and configure the variables accordingly
+ifdef OS	# All configurations for Windwos OS
+# Correct the path based on OS
+   FixPath = $(subst /,\,$1)
+# Name of the compiler used
+   CC = avr-gcc.exe
+# Name of the elf to hex file converter used
+   AVR_OBJ_CPY = avr-objcopy.exe
+else #All configurations for Linux OS
+   ifeq ($(shell uname), Linux)
+# Correct the path based on OS
+      FixPath = $1				
+# Name of the compiler used
+	  CC = avr-gcc
+# Name of the elf to hex file converter used
+	  AVR_OBJ_CPY = avr-objcopy 
+   endif
+endif
 
-########################################################################
-####################### Targets beginning here #########################
-########################################################################
+# Command to make to consider these names as targets and not as file names in folder
+.PHONY:all analysis clean doc
 
-all: $(APPNAME)
+all:$(BUILD_DIR)
+# Compile the code and generate the ELF file
+	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
-# Builds the app
-$(APPNAME): $(OBJ)
-	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+$(BUILD_DIR):
+# Create directory to store the built files
+	mkdir $(BUILD_DIR)
 
-# Creates the dependecy rules
-%.d: $(SRCDIR)/%$(EXT)
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+analysis: $(SRC)
+# Analyse the code using Cppcheck command line utility
+	cppcheck --enable=all $^
 
-# Includes all .h files
--include $(DEP)
+doc:
+# Build the code code documentation using Doxygen command line utility
+	make -C documentation
 
-# Building rule for .o files and its .c/.cpp in combination with all .h
-$(OBJDIR)/%.o: $(SRCDIR)/%$(EXT)
-	$(CC) $(CXXFLAGS) -o $@ -c $<
-
-################### Cleaning rules for Unix-based OS ###################
-# Cleans complete project
-.PHONY: clean
 clean:
-	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
-
-# Cleans only all files with the extension .d
-.PHONY: cleandep
-cleandep:
-	$(RM) $(DEP)
-
-#################### Cleaning rules for Windows OS #####################
-# Cleans complete project
-.PHONY: cleanw
-cleanw:
-	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
-
-# Cleans only all files with the extension .d
-.PHONY: cleandepw
-cleandepw:
-	$(DEL) $(DEP)
+# Remove all the build files and generated document files
+	rm -rf $(call FixPath,$(BUILD_DIR)/*)
+	make -C documentation clean
