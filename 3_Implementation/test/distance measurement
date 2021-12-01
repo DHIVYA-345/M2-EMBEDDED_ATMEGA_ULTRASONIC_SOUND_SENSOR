@@ -3,7 +3,7 @@
 #include <stdlib.h> 
 
 /* Modify these two lines according to the project */
-#include <distance measurement.h>
+#include <distance sensor.h>
 #define PROJECT_NAME    "Distance measurement"
 
 /* Prototypes for all the test functions */
