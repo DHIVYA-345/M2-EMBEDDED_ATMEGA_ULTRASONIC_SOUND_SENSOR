@@ -20,6 +20,11 @@
 
 ![uml (1)](https://user-images.githubusercontent.com/94309132/144071425-13a73aaa-368a-44e1-9a1c-10f7530802f9.png)
 
+# COMPONENT DIAGRAM :
+
+![Untitled Workspace](https://user-images.githubusercontent.com/94309132/144427144-b86f3aa2-3703-49e0-8930-3745bf15aa33.png)
+
+
 
 # BILL OF MATERIALS
 
