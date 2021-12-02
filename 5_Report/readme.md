@@ -151,4 +151,21 @@ atmega328-1 : atmega328
 ![module 2 project](https://user-images.githubusercontent.com/94309132/144086770-f0c138eb-d531-4765-ae43-1779941e009b.png)
 
 
+# FUNCTION OF PROJECT:
+
+The ultrasonic sensor emits a high-frequency sound pulse and calculates the distance depending  upon the time taken by the echo signal to travel back after reflecting from the desired target. The speed of sound is 341 meters per second in air. After the distance is calculated, it will be displayed on the LCD display. 
+
+
+# SAMPLE OUTPUT:
+
+## HARDWARE OUTPUT:
+
+
+![image](https://user-images.githubusercontent.com/94309132/144422935-3cc4eca4-5549-4fd7-ace9-5c2514ff9e8b.png)
+
+
+## SIMULATION OUTPUT:
+
+
+![image](https://user-images.githubusercontent.com/94309132/144423316-e927a5e8-a35d-4576-afef-603d0e21f853.png)
 
