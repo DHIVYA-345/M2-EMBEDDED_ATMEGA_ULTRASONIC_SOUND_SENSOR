@@ -135,6 +135,11 @@ We will have to convert this time into cm to calculate the distance traveled. We
 ![uml (1)](https://user-images.githubusercontent.com/94309132/144071425-13a73aaa-368a-44e1-9a1c-10f7530802f9.png)
 
 
+# COMPONENT DIAGRAM  :
+
+![Untitled Workspace](https://user-images.githubusercontent.com/94309132/144427272-33da3e3f-377c-4efe-b2e3-4272e9859034.png)
+
+
 # BILL OF MATERIALS
 
 Circuit: module 2 project.simu
