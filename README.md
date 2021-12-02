@@ -29,7 +29,6 @@ Folder               | Description
 
 [![Code Quality - Static Code - Cppcheck](https://github.com/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/actions/workflows/c-cpp.yml)
 
-
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2cd7012265924c86bf07b3bb14d755f4)](https://www.codacy.com/gh/DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DHIVYA-345/M2-EMBEDDED_ATMEGA_ULTRASONIC_SOUND_SENSOR&amp;utm_campaign=Badge_Grade)
 
 
